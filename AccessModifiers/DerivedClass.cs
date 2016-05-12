@@ -14,7 +14,7 @@ namespace AccessModifiers
         }
 
         //DerivedClass.PublicBase()' hides inherited member 'BaseClass.PublicBase()'. Use the new keyword if hiding was intended.
-        public void PublicBase()
+        public new void PublicBase()
         {
             Console.WriteLine("Derived Class Method public");
         }
@@ -25,7 +25,7 @@ namespace AccessModifiers
         }
 
         //'DerivedClass.ProtectedBase()' hides inherited member 'BaseClass.ProtectedBase()'. Use the new keyword if hiding was intended.
-        protected void ProtectedBase()
+        protected new void ProtectedBase()
         {
             this.ProtectedBase();
             Console.WriteLine("Derived Class Method protected");
@@ -33,13 +33,13 @@ namespace AccessModifiers
 
 
         //'DerivedClass.InternalBase()' hides inherited member 'BaseClass.InternalBase()'. Use the new keyword if hiding was intended.
-        internal void InternalBase()
+        internal new void InternalBase()
         {
             Console.WriteLine("Derived Class Method internal");
         }
 
         //'DerivedClass.ProtectedInternalBase()' hides inherited member 'BaseClass.ProtectedInternalBase()'. Use the new keyword if hiding was intended.
-        protected internal void ProtectedInternalBase()
+        protected internal new void ProtectedInternalBase()
         {
             Console.WriteLine("Derived Class Method ProtectedInternal");
         }
