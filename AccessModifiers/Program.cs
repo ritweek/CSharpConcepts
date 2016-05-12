@@ -14,26 +14,40 @@ namespace AccessModifiers
             DerivedClass objDerivedClass = new DerivedClass();
             BaseClass objClass = new BaseClass();
 
+            //We can not create DerivedClass object as new BaseClass
             BaseClass objBaseClass = new DerivedClass();
 
+            ChildClass objChildClass = new ChildClass();
+
+           
+            //Base Class
             objClass.PublicBase();
             objClass.VertualBase();
             objClass.InternalBase();
             objClass.ProtectedInternalBase();
-            
 
-            objBaseClass.PublicBase();
-            objBaseClass.VertualBase();
-            objBaseClass.InternalBase();
-            objBaseClass.ProtectedInternalBase();
-
-
+            //Derived Class
             objDerivedClass.PublicBase();
             objDerivedClass.InternalBase();
             objDerivedClass.ProtectedInternalBase();
             objDerivedClass.VertualBase();
 
-            
+            //Base Class an object of Derived Class
+            objBaseClass.PublicBase(); 
+            objBaseClass.VertualBase(); 
+            objBaseClass.InternalBase(); 
+            objBaseClass.ProtectedInternalBase();
+
+
+            objChildClass.PublicBase();
+            objChildClass.InternalBase();
+            objChildClass.ProtectedInternalBase();
+            objChildClass.VertualBase();
+
+
+
+
+
         }
     }
 }
