@@ -38,7 +38,7 @@ namespace AccessModifiers
             objBaseClass.InternalBase(); 
             objBaseClass.ProtectedInternalBase();
 
-
+            //Child Class 
             objChildClass.PublicBase();
             objChildClass.InternalBase();
             objChildClass.ProtectedInternalBase();
