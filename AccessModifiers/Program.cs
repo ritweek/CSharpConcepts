@@ -43,11 +43,6 @@ namespace AccessModifiers
             objChildClass.InternalBase();
             objChildClass.ProtectedInternalBase();
             objChildClass.VertualBase();
-
-
-
-
-
         }
     }
 }
